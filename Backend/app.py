@@ -49,7 +49,7 @@ def predict():
                 confidence = float(confidences[best_idx])
 
                 label = CLASS_LABELS.get(class_id, f"Unknown (class {class_id})")
-
+                print(label)
                 return jsonify({
                     'success': True,
                     'class_id': class_id,
